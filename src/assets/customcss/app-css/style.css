@@ -1,0 +1,10 @@
+.container-table1234 {
+    background: url(../images/app-images/backgroundImg.png)no-repeat;
+    background-size: cover;
+    background-color: #039BE5 !important;
+}
+.demo-main {
+    width: 55%;
+    padding-top: 15rem;
+    padding-left: 4rem;
+}

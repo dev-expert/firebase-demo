@@ -1,0 +1,17 @@
+i.fa.fa-trash-o {
+    color: #ff0000;
+    font-size: 18px;
+    padding: 0px 7px;
+}
+i.fa.fa-pencil {
+    color: #00ca00;
+    font-size: 18px;
+    padding: 0px 6px;
+}
+
+.fa.fa-trash-o :hover{
+    color: #fff !important;
+}
+.fa .fa-pencil :hover{
+    color: #fff !important;
+}

@@ -1,0 +1,24 @@
+<form id="myform" autocomplete="off">
+    <div class="modal-header">
+        <h4 class="modal-title">Add Employee</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" [(ngModel)]="currentStudent.Name" [ngModelOptions]="{standalone: true}" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Designation</label>
+            <input type="text" [(ngModel)]="currentStudent.Designation" [ngModelOptions]="{standalone: true}" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" [(ngModel)]="currentStudent.Age" [ngModelOptions]="{standalone: true}" class="form-control" maxlength="100" id="edit-Age" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <input type="button" class="btn btn-default" value="Cancel" (click)="closeModal(false)"/>
+        <input type="submit" class="btn btn-success" value="Save" (click)="save()"/>
+    </div>
+</form>

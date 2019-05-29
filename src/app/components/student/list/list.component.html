@@ -1,0 +1,56 @@
+<div #modal class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <app-create (toggleModal)='toggleModal($event)' [currentStudent]="currentStudent"></app-create>
+    </div>
+  </div>
+</div>
+
+<div class="limiter">
+  <div class="container-table100">
+    <div class="wrap-table100">
+      <div class="table100 ver1 m-b-110">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-6 table-title-head">
+              <h2>CRUD WITH <b> FIREBASE :</b></h2>
+            </div>
+            <div class="col-sm-6">
+              <a class="btn btn-success button-scs" style="margin-left: 1rem;" (click)="add(true)"><i
+                  class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+              <a class="btn btn-danger button-dng"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+            </div>
+          </div>
+        </div>
+        <table data-vertable="ver1">
+          <thead>
+            <tr class="row100 head">
+              <th class="column100 column1">#</th>
+              <th class="column100 column2">Name</th>
+              <th class="column100 column3">Designation</th>
+              <th class="column100 column4">Age</th>
+              <th class="column100 column5">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let student of students; let i= index;" class="row100">
+              <td class="column100 column1">{{i+1}}</td>
+              <td class="column100 column2">{{student.Name}}</td>
+              <td class="column100 column3">{{student.Designation}}</td>
+              <td class="column100 column4">{{student.Age}}</td>
+              <td class="column100 column5">
+                <a (click)="edit(student.id)">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+                <a (click)="delete(student.id)">
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
