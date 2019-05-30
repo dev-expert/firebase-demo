@@ -8,3 +8,84 @@
     padding-top: 15rem;
     padding-left: 4rem;
 }
+
+
+ /* Modal styles */
+ .modal .modal-dialog {
+    max-width: 400px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    padding: 15px 30px;
+    background: #1A2933;
+}
+
+.modal .modal-content {
+    border-radius: 3px;
+}
+
+.modal .modal-footer {
+    background: #1A2933;
+    border-radius: 0 0 3px 3px;
+}
+
+.modal .modal-title {
+    display: inline-block;
+    color: white;
+}
+
+.modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+    resize: vertical;
+}
+
+.modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+}
+
+.modal form label {
+    font-weight: normal;
+    color: white;
+}
+
+.modal-body p {
+    color: white;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #E43967;
+    border-color: #E43967;
+}
+
+.btn {
+    background-color: #E43967;
+    border-color: #E43967;
+}
+
+.btn-default {
+    color: rgb(44, 44, 44);
+    background-color: #fff;
+    border-color: #ccc;
+}
+.modal-dialog {
+    margin-top: 22rem !important;
+    margin-left: 18rem !important;
+}
+
+.close {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.close :hover {
+    color: #E43967;
+}
